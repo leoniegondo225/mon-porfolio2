@@ -1,0 +1,274 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body {
+	background: #fff;
+	color: #9a9a9a;
+	font-family: 'Poppins', sans-serif;
+}
+img {
+	max-width: 100%;
+}
+a,
+a img,
+a:before,
+a:after {
+	text-decoration: none;
+	-webkit-transition: all 0.20s linear;
+	-moz-transition: all 0.20s linear;
+	-o-transition: all 0.20s linear;
+	transition: all 0.20s linear;
+}
+a:hover {
+	color: #323232;
+	border-color: #323232;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #323232;
+	font-weight: 300;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+p {
+	margin-bottom: 2.7em;
+}
+
+.ls {
+	background: #fff;
+}
+
+.ls.ms {
+	background: #f2f2f2;
+}
+.container {
+	margin: auto;
+	max-width: 1170px;
+}
+.row {
+	max-width: 1504px;
+	margin: 0 auto;
+}
+.row:before,
+.row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+[class*="col-"] {
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+@media (min-width: 992px) {
+	.col-md-6 {
+		float: left;
+		width: 50%;
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-bottom: 40px;
+
+	}
+	.col-md-6.col-centered {
+		float:none;
+		clear: both;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.col-md-12 {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+@media (max-width: 767px) {
+	[class*="col-"],
+	.row {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 600px;
+	}
+}
+/*	
+@media (min-width: 678px and max-width: 991px) {
+	[class*="col-"] {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+*/
+.text-center {
+	text-align: center;
+}
+.logo {
+	margin-bottom: 40px;
+}
+
+.section_header {
+	margin: 30px 0;
+}
+.section_header+p {
+	margin-top: -20px;
+}
+
+.page_logo {
+	padding: 55px 0 20px;
+}
+.page_logo a {
+	display: inline-block;
+	border: 1px solid #f69323;
+	padding: 0 0.5em;
+}
+
+@media (max-width: 991px) {
+	.ls {
+		padding: 25px 0 30px;
+	}
+}
+.page_content {
+	padding: 60px 0 60px;
+}
+.page_elements {
+	padding: 80px 0 120px;
+}
+
+.demo {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	margin: 0 auto 15px;
+	max-width: 652px;
+}
+.demo_name {
+	font-size: 18px;
+	line-height: 1;
+	color: #000;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 17.8%;
+	left: 0;
+	right: 0;
+}
+.demo_name strong {
+	font-weight: 700;
+}
+.bacground {
+}
+.inside_image {
+	position: absolute;
+	top: 4.9%;
+	left: 4%;
+	right: 4%;
+	bottom: 31.10%;
+	overflow: hidden;
+}
+.inside_image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: auto;
+	-webkit-transition: top 4s linear;
+	-moz-transition: top 4s linear;
+	-o-transition: top 4s linear;
+	transition: top 4s linear;
+}
+
+/* vertical item */
+.vertical-item .item-media{
+	border: 1px solid #f1f1f1;
+}
+.ls.ms .vertical-item .item-media{
+	border-color: #e6e6e6;
+}
+.item-media {
+	position: relative;
+	overflow: hidden;
+}
+.item-media a:before {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.1);
+	z-index: 2;
+
+}
+.item-media a:after {
+	opacity: 0.5;
+	content: '+';
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+	background: #323232;
+	color: #fff;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	border-radius: 50%;
+	margin-left: -45px;
+	margin-top: -45px;
+	z-index: 3;
+
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0); 
+	-ms-transform: scale(0); 
+	transform: scale(0);
+}
+.vertical-item:hover .item-media a:before {
+	opacity: 1;
+}
+.vertical-item:hover .item-media a:after {
+	opacity: 0.8;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	transform: scale(1);
+}
+.vertical-item:hover .item-media img {
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15); 
+	-ms-transform: scale(1.15); 
+	transform: scale(1.15);
+}
+/*
+.vertical-item .item-content {
+	padding: 0 20px 20px;
+}
+*/
+
+/*owl styles*/
+.owl-theme .owl-nav {
+	position: absolute;
+	right: 0;
+	top: -80px;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+	background: transparent;
+	color: #9a9a9a;
+	padding: 0;
+	font-size: 22px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+	background: transparent;
+	color: #323232;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #9a9a9a;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #323232;
+}

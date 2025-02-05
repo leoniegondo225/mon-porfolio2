@@ -19,9 +19,7 @@ body{
     
 }
 
-.textbleu{
-    background-color: #ddebeb;
-}
+
 .espacement-lignes{
     line-height: 1.5;
 }
@@ -54,7 +52,9 @@ body{
     background-color: #f59689;
 }
 
-
+.mobile{
+    width: 280px;
+}
 
 @media (max-width: 768px) {
     .aropos{

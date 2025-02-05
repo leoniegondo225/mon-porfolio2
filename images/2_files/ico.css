@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/ico/icomoon.eot?56f9qr');
+  src:  url('../fonts/ico/icomoon.eot?56f9qr#iefix') format('embedded-opentype'),
+    url('../fonts/ico/icomoon.ttf?56f9qr') format('truetype'),
+    url('../fonts/ico/icomoon.woff?56f9qr') format('woff'),
+    url('../fonts/ico/icomoon.svg?56f9qr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-bi_bag:before {
+  content: "\e900";
+}
+.ico-ic:before {
+  content: "\e901";
+}
+.ico-ic-1:before {
+  content: "\e902";
+}
+.ico-ic-2:before {
+  content: "\e903";
+}
+.ico-ic-3:before {
+  content: "\e904";
+}
+.ico-ic-4:before {
+  content: "\e905";
+}
+.ico-ic-5:before {
+  content: "\e906";
+}
+.ico-ic-6:before {
+  content: "\e907";
+}
+.ico-ic-7:before {
+  content: "\e908";
+}
+.ico-ic-8:before {
+  content: "\e909";
+}
+.ico-ic-9:before {
+  content: "\e90a";
+}
+.ico-ic-10:before {
+  content: "\e90b";
+}
+.ico-ic-11:before {
+  content: "\e90c";
+}
+.ico-ic-12:before {
+  content: "\e90d";
+}
+.ico-ic-13:before {
+  content: "\e90e";
+}
+.ico-ic-14:before {
+  content: "\e90f";
+}
